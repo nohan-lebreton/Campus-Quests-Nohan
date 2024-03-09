@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const LoginPage: React.FC = () => {
     return (
@@ -6,7 +7,7 @@ const LoginPage: React.FC = () => {
             <div className="row justify-content-center">
                 <div className="col-md-6">
                     <div className="card">
-                        <div className="card-header">Connexion</div>
+                        <div className="card-header bg-primary text-white">Connexion</div>
                         <div className="card-body">
                             <form>
                                 <div className="mb-3">
@@ -17,7 +18,7 @@ const LoginPage: React.FC = () => {
                                     <label htmlFor="password" className="form-label">Mot de passe</label>
                                     <input type="password" className="form-control" id="password" />
                                 </div>
-                                <button type="submit" className="btn btn-primary">Se connecter</button>
+                                <button type="submit" className="btn btn-primary btn-block">Se connecter</button>
                             </form>
                         </div>
                     </div>
